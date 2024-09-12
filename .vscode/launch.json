@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-BaseDeDatosPacientesApplication<base_de_datos_pacientes>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.sacm.base_de_datos_pacientes.BaseDeDatosPacientesApplication",
+            "projectName": "base_de_datos_pacientes",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

@@ -1,0 +1,82 @@
+.TituloSesion {
+    color: aquamarine;
+    text-align: center;
+    font-size: 3rem;
+    /* Tamaño del texto */
+    text-transform: uppercase;
+    /* Convertir texto a mayúsculas */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Sombra del texto */
+    transform: translateZ(1px);
+    /* Simular un efecto 3D */
+}
+
+.subtituloSesion {
+    color: aliceblue;
+    text-align: center;
+    text-decoration: underline;
+    font: size 14px;;
+    /* Tamaño del texto */
+}
+
+.ContenedorForm {
+text-align: center;
+}
+
+.LabelsForms{
+color:cyan;
+font-size: 22px;
+}
+
+#ButtonForm {
+    background-color: blue; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Relleno interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de fuente */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+}
+
+#ButtonForm:hover {
+    background-color: darkblue; /* Color de fondo al pasar el cursor */
+}
+.creditos {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 12px;
+}
+
+.creditos p {
+    margin: 0;
+}
+.olvido-usuario {
+    display: inline-block;
+    vertical-align: middle; /* Alineación vertical media para alinear con el campo de entrada */
+    margin-left: 10px; /* Espacio izquierdo para separar el texto del campo de entrada */
+    font-size: 14px; /* Tamaño de fuente opcional */
+    color:aliceblue; /* Color del texto opcional */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+}
+
+
+.olvido-usuario:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+#recuerdame {
+    color:darkorange;
+    vertical-align: middle; /* Alineación vertical media para alinear con otros elementos */
+    margin-right: 5px; /* Espacio derecho para separar el checkbox de su etiqueta */
+}
+
+
+
+
+
+
