@@ -22,5 +22,5 @@ public interface DaoSacm {
      * @param id El identificador del paciente que se desea eliminar.
      */
     public void deleteUser(int id);
-    //probando git
+    
 }
