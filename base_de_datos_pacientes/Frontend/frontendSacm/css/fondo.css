@@ -1,0 +1,35 @@
+/* Archivo: fondo.css */
+
+/* Fondo con degradado */
+body {
+    background: url('img/fondoPremium.jpg');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.ContenedorForm {
+    position: relative;
+}
+
+.TituloSesion {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    color: #fff;
+}
+
+.subtituloSesion {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Estilos adicionales para el contenedor del formulario */
+.ContenedorForm {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
