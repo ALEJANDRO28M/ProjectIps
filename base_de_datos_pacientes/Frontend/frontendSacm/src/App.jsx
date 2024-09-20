@@ -1,29 +1,51 @@
 import React, { useState } from 'react';
 import '../css/colores.css';
-import '../css/fondo.css'
+import '../css/fondo.css';
+
+// Componente funcional para el formulario de inicio de sesión
 function InicioDeSesion() {
+  // Estados para almacenar el usuario, contraseña y estado del checkbox "Recuérdame"
   const [usuario, setUsuario] = useState('');
   const [password, setPassword] = useState('');
   const [recuerdame, setRecuerdame] = useState(false);
 
+  // Maneja el cambio en el campo de usuario
   const handleUsuarioChange = (e) => {
     setUsuario(e.target.value);
   };
 
+  // Maneja el cambio en el campo de contraseña
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
 
+  // Maneja el cambio en el checkbox "Recuérdame"
   const handleRecuerdameChange = (e) => {
     setRecuerdame(e.target.checked);
   };
 
+  // Función asíncrona para manejar el ingreso
+  async function ingresar() {
+    try {
+      const peticion = await fetch(`http://localhost:3000/Login?usuario=${usuario}&clave=${password}`);
+      if (peticion.ok) {
+        alert("¡Bienvenido!");
+      } else {
+        alert('Usuario o clave incorrectos');
+      }
+    } catch (error) {
+      console.error('Error en la solicitud:', error);
+    }
+  }
+
+  // Maneja el envío del formulario
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Previene el comportamiento por defecto del formulario
     // Aquí va la lógica para manejar el inicio de sesión
     console.log("Usuario:", usuario);
     console.log("Password:", password);
     console.log("Recuérdame:", recuerdame);
+    ingresar(); // Llamar a la función de ingresar al hacer submit
   };
 
   return (
