@@ -1,0 +1,70 @@
+.registro-container {
+  max-width: 400px; /* Mantiene el ancho máximo del contenedor en 400px */
+  margin: auto; /* Centra el contenedor horizontalmente */
+  padding: 40px 100px; /* Espacio interno del contenedor, manteniendo lo que pediste */
+  background-color: #f9f9f9; /* Color de fondo del contenedor */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinea todo al centro del contenedor */
+}
+
+/* Estilo para el título del formulario */
+h2 {
+  text-align: center; /* Centra el texto del título */
+  color: #333;
+  margin-bottom: 50px; /* Ajuste del margen inferior para que no haya mucho espacio */
+}
+
+/* Estilo para el formulario */
+.formulario {
+  width: 100%; /* El formulario ocupa el 100% del ancho del contenedor */
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espacio entre los campos del formulario */
+}
+
+/* Estilo para cada grupo de formulario */
+.form-group {
+  width: 100%; /* El grupo ocupa todo el ancho disponible */
+}
+
+/* Estilo para las etiquetas de los campos */
+label {
+  margin-bottom: 5px; /* Espacio entre la etiqueta y el campo */
+  font-weight: bold;
+  color: #555;
+}
+
+/* Estilo para los campos de entrada */
+input {
+  width: 100%; /* El campo de entrada ocupa el ancho completo */
+  padding: 10px; /* Espacio interno */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Efecto al hacer foco en los campos */
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Estilo para el botón de registro */
+.btn {
+  width: 100%; /* Botón con ancho completo */
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Hover para el botón */
+.btn:hover {
+  background-color: #0056b3;
+}
