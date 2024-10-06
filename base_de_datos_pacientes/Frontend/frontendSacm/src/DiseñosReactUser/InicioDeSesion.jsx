@@ -1,8 +1,13 @@
 import { useState } from 'react';
+import {useNavigate} from 'react-router-dom';
 import '../css/fondo.css';
 import '../css/colores.css';
 
+
 export default function InicioSesion(){
+
+  //instanciamos la clase navigate para poder utilizar sus respectivos comandos
+  const redireccionar = useNavigate();
 
      // Estados para almacenar el usuario, contraseña y estado del checkbox "Recuérdame"
   const [usuario, setUsuario] = useState('');
@@ -24,12 +29,14 @@ export default function InicioSesion(){
     setRecuerdame(e.target.checked);
   };
 
+
   // Función asíncrona para manejar el ingreso
   async function ingresar() {
     try {
       const peticion = await fetch(`http://localhost:3000/Login?usuario=${usuario}&clave=${password}`);
       if (peticion.ok) {
         alert("¡Bienvenido!");
+        redireccionar('/datos');
       } else {
         alert('Usuario o clave incorrectos');
       }
@@ -47,6 +54,8 @@ export default function InicioSesion(){
     console.log("Recuérdame:", recuerdame);
     ingresar(); // Llamar a la función de ingresar al hacer submit
   };
+
+
     return(
         <div>
         <h1 className="TituloSesion">BIENVENIDO A SACM</h1>

@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.tabla-container {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Ajuste para una mejor presentación */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2em; /* Tamaño de fuente grande */
+}
+
+.tabla_Users {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla_Users thead {
+    background-color: #007bff;
+    color: white;
+}
+
+.tabla_Users th,
+.tabla_Users td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s; /* Suaviza la transición */
+}
+
+.tabla_Users tbody tr {
+    transition: background-color 0.3s; /* Suaviza la transición */
+}
+
+.tabla_Users tbody tr:hover {
+    background-color: #e9ecef; /* Color al pasar el mouse */
+}
+
+.tabla_Users tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color alternativo para filas pares */
+}
+
+.tabla_Users tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* Color alternativo para filas impares */
+}
+
+.tabla_Users th {
+    border: 1px solid #ddd;
+    text-align: center;
+    font-weight: bold; /* Aumentar el peso de la fuente */
+}
+
+.error {
+    color: red;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.loading {
+    text-align: center;
+    font-size: 1.5em;
+    color: #007bff; /* Color azul para el texto de carga */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .tabla_Users th,
+    .tabla_Users td {
+        padding: 10px; /* Ajustar padding en pantallas pequeñas */
+        font-size: 0.9em; /* Disminuir tamaño de fuente en móviles */
+    }
+
+    h2 {
+        font-size: 1.8em; /* Ajustar tamaño del título en móviles */
+    }
+}

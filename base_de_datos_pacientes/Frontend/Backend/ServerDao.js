@@ -25,11 +25,12 @@ app.use(express.json());  // Asegúrate de incluir esto si vas a manejar JSON en
 // Importamos las rutas para el servidor express
 const iniciarSesion = require('./Controllers/backendInicioSesion');
 const registrarUser = require('./Controllers/Registrar');
+const dataUser = require('./Controllers/dataUsers');
 
 // Vamos a generar las rutas del servidor de los siguientes archivos
 app.use('/Login', iniciarSesion);      // Para manejar la ruta de inicio de sesión
 app.use('/Registrar', registrarUser);  // Para manejar la ruta de registro
-
+app.use('/Data', dataUser);
 // Ruta raíz
 app.get('/', (req, res) => {
     res.send('Hello World!');
